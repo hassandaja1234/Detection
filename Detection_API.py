@@ -45,4 +45,4 @@ def get_attendance():
         return jsonify({"error": error_message}), 400
 if __name__ == '__main__':
     port = int(os.getenv("PORT", "5555"))  # Use Render's port or default to 5555
-    app.run(debug=False, port=port, host="0.0.0.0"))
+    app.run(debug=False, port=port, host="0.0.0.0")
